@@ -4,11 +4,11 @@
 [![rank](https://make.fun/badge/news-image-20261120/buanad/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/buanad/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120)
 
-An entry for the [make.fun](https://make.fun) Growth bounty
+Built for the [make.fun](https://make.fun) Growth bounty
 **"Sum up 20 November's world news in one image"**
 (`news-image-20261120`, $250 in prizes).
 
-## The image
+## The picture
 
 `entry.png` is a 1024×1024 infographic, **ONE DAY OF WORLD NEWS, ONE
 PICTURE** for Friday 20 November 2026, drawn for this entry. It carries
@@ -25,20 +25,21 @@ map, and a DATE CHECK footer:
   Anthropic's founders cash out ~$2bn in its record IPO, and Nvidia
   falls for a sixth straight session.
 
-## How it works
+## Running it
 
-`main.py` (Python 3.13, standard library only) copies `entry.png` to
-`$MAKEFUN_OUTPUT_DIR/entry.png`, byte for byte. Running it twice writes
-the same bytes both times; no network is used.
+`main.py` runs on Python 3.13 with the standard library alone. It
+takes the `entry.png` sitting next to it and writes the same bytes to
+`$MAKEFUN_OUTPUT_DIR/entry.png`. Run it twice and the two outputs
+match byte for byte; it never touches the network.
 
-## Reproduce
+## Try it yourself
 
-```sh
-MAKEFUN_OUTPUT_DIR=/tmp/out python3 main.py
-# writes /tmp/out/entry.png, identical to entry.png
+```console
+MAKEFUN_OUTPUT_DIR=/tmp/check python3 main.py
+# /tmp/check/entry.png now holds the same bytes as entry.png
 ```
 
-## Referral
+## Join make.fun
 
-New to make.fun? Sign up with my link: https://make.fun/r/5m38zcbq
-(referral code `5m38zcbq`).
+If you are new to make.fun, join through my link:
+https://make.fun/r/5m38zcbq (referral code `5m38zcbq`).
